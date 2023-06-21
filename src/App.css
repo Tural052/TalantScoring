@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contianer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url(./assets/bacground.svg);
+  background-repeat: no-repeat;
+  padding-right: 220px;
+  position: relative;
+}
+
+.contianer>img {
+  position: absolute;
+  bottom: 100px;
+  left: 300px;
+}
+
+.left {
+  padding: 60px 40px;
+
+}
+
+.left p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.left p:last-child {
+  max-width: 234px;
+  margin-top: 32px;
+}
+
+.right {
+  padding: 60px 40px;
+  position: relative;
+}
+
+.right> ul {
+  list-style-type: none;
+  position: absolute;
+  left: -130px;
+  z-index: -1;
+}
+
+.right>ul li {
+  padding: 10px 42px;
+  max-width: 235px;
+  border-radius: 25px;
+  margin-bottom: 16px;
+}
+
+.right ul>li>span,
+.right ul>li>h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.list {
+  background: #F4F4F4;
+}
+
+.listActive {
+  background: #103557;
+  color: white;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  position: relative;
+  left: -20px;
+}
+
+.listActive>span {
+  position: absolute;
+  left: 15px;
+}
+
+
+.buttonBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonBox>button{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  border: none;
+  background: #038477;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+
+.buttonBox>button>img{
+  transition: all ease-in-out 0.2s; 
+}
+
+.buttonBox>button:hover{
+  background: #026D5A;
+}
+
+.buttonBox>button:first-child{
+  background: #FFFFFF;
+  color: #038477;
+  border: 1px solid #038477;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+
+.buttonBox>button:last-child{
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.buttonBox>button:first-child:hover{
+  background: #024c45;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.buttonBox>button:first-child:hover>img{
+  margin-right: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonBox>button:last-child:hover>img{
+  margin-left: 40px;
+}
+
+.buttonBox>button:last-child:hover{
+  background: #05c5b2;
+  color: #FFFFFF;
+}
+
+.buttonBox>button:first-child>img{
+  margin-right: 20px;
+}
+
+.buttonBox>button:last-child>img{
+  margin-left: 20px;
 }

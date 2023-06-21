@@ -1,0 +1,248 @@
+.substageContainer {
+    background: #FFFFFF;
+    box-shadow: 3px 4px 2px #F5F5F5;
+    border-radius: 12px;
+    padding: 43px 33px;
+    min-width: 570px;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.substageHeaderContent {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #038477;
+    margin-bottom: 18px;
+
+}
+
+.substageQuestion {
+    margin-bottom: 20px;
+    position: relative;
+    animation: experinenceLoading 0.5s ease-in-out;
+}
+
+.substageQuestion>div {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.substageQuestionText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.substageOption {
+    justify-content: space-between;
+    color: #ADADAD;
+    transition: all ease-in-out 0.3s;
+}
+
+.substageOption:hover {
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+
+.addExperinece,
+.addBox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: experinenceLoading 0.5s ease-in-out;
+}
+
+.substageOption,
+.addExperinece>div>label,
+.addBox label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #F2F6F6;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.selectedBox {
+    margin-right: 16px;
+    background-color: rgb(242, 246, 246);
+    width: 245px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+}
+
+.selectedBox>li {
+    padding: 10px 16px;
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectedBox>li:hover {
+    background-color: rgb(193, 193, 193);
+}
+
+
+
+.noneSelectBox {
+    display: none;
+}
+
+.addExperinece>div,
+.addBox>div {
+    display: flex;
+    gap: 15px;
+}
+
+.addExperinece>div>label,
+.addBox>div>label {
+    width: 30%;
+    justify-content: center;
+    position: relative;
+    color: #444444;
+}
+
+.addExperinece>div>label>input,
+.addBox>div>label>input {
+    position: absolute;
+    right: 10px;
+}
+
+.checkBox {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid rgb(3, 132, 119);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.checkBoxActive {
+    background-color: rgb(3, 132, 119);
+    border-color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+
+.iconTop {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.3s;
+    user-select: none;
+}
+
+.iconBottom {
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.3s;
+    user-select: none;
+}
+
+.loadingBox {
+    height: 22px;
+    width: 100%;
+    background: #F2F6F6;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.loadingBar {
+    transition: all ease-in-out 0.3s;
+    border-radius: 8px;
+    background-color: #038477;
+    height: 22px;
+}
+
+@keyframes experinenceLoading {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.addButton {
+    width: 100%;
+    background: #F2F6F6;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all ease-in-out 0.2s;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+.addButton:hover {
+    border: 1px solid #038477;
+    background-color: #FFFFFF;
+}
+
+.addBox>input {
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.addBox>input:focus {
+    outline: none;
+}
+
+.substageContent>h2 {
+    background: #F5F5F5;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #245480;
+    font-weight: 500;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.substageContent>h2:hover {
+    background: #E5E5E5;
+}
+
+.substageContent>h2>img:last-child {
+    margin-left: 20px;
+}
+
+.substageContent>h2>img:first-child {
+    margin-right: 20px;
+}
+
+.substageContent>h2>img {
+    transition: all ease-in-out 0.3s;
+    border-radius: 5px;
+}
+
+.substageContent>h2>img:hover {
+    background-color: #03847729;
+    }
